@@ -61,14 +61,22 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eSc-pH-HEC">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="592"/>
                             </arscnView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="superfice detectada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fu8-w8-To0">
+                                <rect key="frame" x="110.5" y="40" width="154" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="MBf-xL-c50" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IKx-kG-fPk"/>
                             <constraint firstItem="eSc-pH-HEC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ku1-yo-MFR"/>
                             <constraint firstItem="eSc-pH-HEC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ydp-1B-FTW"/>
+                            <constraint firstItem="Fu8-w8-To0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z7F-rE-sdW"/>
                             <constraint firstItem="eSc-pH-HEC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="apQ-nz-5lC"/>
                             <constraint firstItem="MBf-xL-c50" firstAttribute="top" secondItem="eSc-pH-HEC" secondAttribute="bottom" id="fCj-Xw-jAG"/>
+                            <constraint firstItem="Fu8-w8-To0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="fDq-YG-wY1"/>
                             <constraint firstItem="MBf-xL-c50" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="hFt-4m-Ldn"/>
                             <constraint firstItem="MBf-xL-c50" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="x9G-c9-AFV"/>
                         </constraints>
@@ -77,6 +85,7 @@
                     <connections>
                         <outlet property="itemsCollectionView" destination="MBf-xL-c50" id="I53-3c-bAU"/>
                         <outlet property="sceneView" destination="eSc-pH-HEC" id="azp-Qu-NvC"/>
+                        <outlet property="superficie" destination="Fu8-w8-To0" id="BHk-vV-wyg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
